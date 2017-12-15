@@ -1,0 +1,12 @@
+# Logfile created on 2017-12-11 11:55:55 +0530 by logger.rb/56815
+I, [2017-12-11T11:58:01.963708 #27759]  INFO -- : 2017-12-11T11:58:01+0530: [Worker(host:Praneethas-MacBook-Pro.local pid:27759)] Starting job worker
+I, [2017-12-11T11:58:02.038164 #27759]  INFO -- : 2017-12-11T11:58:02+0530: [Worker(host:Praneethas-MacBook-Pro.local pid:27759)] Job ActiveJob::QueueAdapters::DelayedJobAdapter::JobWrapper (id=1) (queue=default) RUNNING
+I, [2017-12-11T11:58:02.089938 #27759]  INFO -- : 2017-12-11T11:58:02+0530: [Worker(host:Praneethas-MacBook-Pro.local pid:27759)] Job ActiveJob::QueueAdapters::DelayedJobAdapter::JobWrapper (id=1) (queue=default) COMPLETED after 0.0516
+I, [2017-12-11T11:58:02.091412 #27759]  INFO -- : 2017-12-11T11:58:02+0530: [Worker(host:Praneethas-MacBook-Pro.local pid:27759)] 1 jobs processed at 9.6789 j/s, 0 failed
+I, [2017-12-11T11:58:31.286861 #27759]  INFO -- : 2017-12-11T11:58:31+0530: [Worker(host:Praneethas-MacBook-Pro.local pid:27759)] Exiting...
+I, [2017-12-11T12:35:08.602412 #50957]  INFO -- : 2017-12-11T12:35:08+0530: [Worker(host:Praneethas-MacBook-Pro.local pid:50957)] Starting job worker
+I, [2017-12-11T12:35:08.696764 #50957]  INFO -- : 2017-12-11T12:35:08+0530: [Worker(host:Praneethas-MacBook-Pro.local pid:50957)] Job ActiveJob::QueueAdapters::DelayedJobAdapter::JobWrapper (id=2) (queue=default) RUNNING
+I, [2017-12-11T12:35:08.776940 #50957]  INFO -- : 2017-12-11T12:35:08+0530: [Worker(host:Praneethas-MacBook-Pro.local pid:50957)] Job ActiveJob::QueueAdapters::DelayedJobAdapter::JobWrapper (id=2) (queue=default) COMPLETED after 0.0800
+I, [2017-12-11T12:35:08.781716 #50957]  INFO -- : 2017-12-11T12:35:08+0530: [Worker(host:Praneethas-MacBook-Pro.local pid:50957)] Job ActiveJob::QueueAdapters::DelayedJobAdapter::JobWrapper (id=3) (queue=default) RUNNING
+I, [2017-12-11T12:35:08.785542 #50957]  INFO -- : 2017-12-11T12:35:08+0530: [Worker(host:Praneethas-MacBook-Pro.local pid:50957)] Job ActiveJob::QueueAdapters::DelayedJobAdapter::JobWrapper (id=3) (queue=default) COMPLETED after 0.0036
+I, [2017-12-11T12:35:08.787039 #50957]  INFO -- : 2017-12-11T12:35:08+0530: [Worker(host:Praneethas-MacBook-Pro.local pid:50957)] 2 jobs processed at 10.8569 j/s, 0 failed

@@ -1,0 +1,2210 @@
+Started GET "/" for 127.0.0.1 at 2017-12-06 12:20:12 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/praneethavelamuri/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/praneethavelamuri/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (3.2ms)
+Completed 200 OK in 230ms (Views: 10.9ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateStudents (20171206065105)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "students" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "subject" varchar, "grade" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171206065105"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-12-06 06:55:01.705289"], ["updated_at", "2017-12-06 06:55:01.705289"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2017-12-06 12:42:45 +0530
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/praneethavelamuri/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/praneethavelamuri/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (2.0ms)
+Completed 200 OK in 11ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/student_api" for 127.0.0.1 at 2017-12-06 12:43:04 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/student_api"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/student_api" for 127.0.0.1 at 2017-12-06 12:54:15 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/student_api"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/" for 127.0.0.1 at 2017-12-06 13:07:52 +0530
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/POST%20/students" for 127.0.0.1 at 2017-12-06 13:08:31 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/POST%20/students"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-12-06 13:08:32 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/student_api" for 127.0.0.1 at 2017-12-06 13:08:39 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/student_api"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/students" for 127.0.0.1 at 2017-12-06 13:08:48 +0530
+  
+ActionController::RoutingError (uninitialized constant StudentsController):
+  
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/students" for 127.0.0.1 at 2017-12-06 13:15:51 +0530
+  
+ActionController::RoutingError (uninitialized constant StudentsController):
+  
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/students" for 127.0.0.1 at 2017-12-06 13:17:24 +0530
+  
+ActionController::RoutingError (uninitialized constant StudentsController):
+  
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/students" for 127.0.0.1 at 2017-12-06 13:51:42 +0530
+  
+ActionController::RoutingError (uninitialized constant StudentsController):
+  
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/students" for 127.0.0.1 at 2017-12-06 13:52:40 +0530
+  
+ActionController::RoutingError (uninitialized constant StudentsController):
+  
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/students" for 127.0.0.1 at 2017-12-06 13:53:44 +0530
+  
+ActionController::RoutingError (uninitialized constant StudentsController):
+  
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-12-06 13:55:30 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/praneethavelamuri/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/praneethavelamuri/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (2.0ms)
+Completed 200 OK in 9ms (Views: 4.7ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-12-06 13:55:30 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/student/new" for 127.0.0.1 at 2017-12-06 13:55:37 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/student/new"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/student" for 127.0.0.1 at 2017-12-06 13:55:42 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/student"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/students" for 127.0.0.1 at 2017-12-06 13:55:57 +0530
+  
+ActionController::RoutingError (uninitialized constant StudentsController):
+  
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/student" for 127.0.0.1 at 2017-12-06 13:57:05 +0530
+  
+ActionController::RoutingError (No route matches [POST] "/student"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/students" for 127.0.0.1 at 2017-12-06 13:57:42 +0530
+  
+ActionController::RoutingError (uninitialized constant StudentsController):
+  
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/students" for 127.0.0.1 at 2017-12-06 13:57:49 +0530
+  
+ActionController::RoutingError (uninitialized constant StudentsController):
+  
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/students/index" for 127.0.0.1 at 2017-12-06 13:58:09 +0530
+  
+ActionController::RoutingError (uninitialized constant StudentsController):
+  
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/students" for 127.0.0.1 at 2017-12-06 13:59:32 +0530
+  
+ActionController::RoutingError (uninitialized constant StudentsController):
+  
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/students" for 127.0.0.1 at 2017-12-06 13:59:40 +0530
+  
+ActionController::RoutingError (uninitialized constant StudentsController):
+  
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/students/" for 127.0.0.1 at 2017-12-06 14:00:05 +0530
+  
+ActionController::RoutingError (uninitialized constant StudentsController):
+  
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/student" for 127.0.0.1 at 2017-12-06 14:00:12 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/student"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-12-06 14:03:41 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/praneethavelamuri/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/praneethavelamuri/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (2.1ms)
+Completed 200 OK in 11ms (Views: 5.3ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2017-12-06 14:03:48 +0530
+  
+ActionController::RoutingError (uninitialized constant StudentsController):
+  
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/students" for 127.0.0.1 at 2017-12-06 14:07:55 +0530
+  
+ActionController::RoutingError (uninitialized constant StudentsController):
+  
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/students" for 127.0.0.1 at 2017-12-06 14:10:56 +0530
+  
+ArgumentError ('Student' is not a supported controller name. This can lead to potential routing problems. See http://guides.rubyonrails.org/routing.html#specifying-a-controller-to-use):
+  
+config/routes.rb:3:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/students" for 127.0.0.1 at 2017-12-06 14:13:01 +0530
+  
+ArgumentError ('Students' is not a supported controller name. This can lead to potential routing problems. See http://guides.rubyonrails.org/routing.html#specifying-a-controller-to-use):
+  
+config/routes.rb:3:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/student" for 127.0.0.1 at 2017-12-06 14:14:17 +0530
+  
+ArgumentError ('Students' is not a supported controller name. This can lead to potential routing problems. See http://guides.rubyonrails.org/routing.html#specifying-a-controller-to-use):
+  
+config/routes.rb:3:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/student" for 127.0.0.1 at 2017-12-06 14:14:56 +0530
+  
+ArgumentError ('Student' is not a supported controller name. This can lead to potential routing problems. See http://guides.rubyonrails.org/routing.html#specifying-a-controller-to-use):
+  
+config/routes.rb:3:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/student" for 127.0.0.1 at 2017-12-06 14:15:38 +0530
+  
+ArgumentError ('StudentController' is not a supported controller name. This can lead to potential routing problems. See http://guides.rubyonrails.org/routing.html#specifying-a-controller-to-use):
+  
+config/routes.rb:3:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/student" for 127.0.0.1 at 2017-12-06 14:16:19 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/student"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/student" for 127.0.0.1 at 2017-12-06 14:19:09 +0530
+  
+ArgumentError ('Student' is not a supported controller name. This can lead to potential routing problems. See http://guides.rubyonrails.org/routing.html#specifying-a-controller-to-use):
+  
+config/routes.rb:3:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/student" for 127.0.0.1 at 2017-12-06 14:26:57 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/student"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/students" for 127.0.0.1 at 2017-12-06 14:28:15 +0530
+  
+ActionController::RoutingError (uninitialized constant StudentsController):
+  
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/rails/info/routes?path=new" for 127.0.0.1 at 2017-12-06 14:28:26 +0530
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"new"}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started GET "/rails/info/routes?path=new" for 127.0.0.1 at 2017-12-06 14:28:27 +0530
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"new"}
+Completed 200 OK in 0ms (Views: 0.1ms)
+
+
+Started GET "/rails/info/routes?path=c" for 127.0.0.1 at 2017-12-06 14:28:29 +0530
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"c"}
+Completed 200 OK in 0ms (Views: 0.1ms)
+
+
+Started GET "/rails/info/routes?path=cew" for 127.0.0.1 at 2017-12-06 14:28:29 +0530
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"cew"}
+Completed 200 OK in 0ms (Views: 0.1ms)
+
+
+Started GET "/rails/info/routes?path=cea" for 127.0.0.1 at 2017-12-06 14:28:30 +0530
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"cea"}
+Completed 200 OK in 0ms (Views: 0.1ms)
+
+
+Started GET "/rails/info/routes?path=cea" for 127.0.0.1 at 2017-12-06 14:28:31 +0530
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"cea"}
+Completed 200 OK in 0ms (Views: 0.2ms)
+
+
+Started GET "/rails/info/routes?path=ceate" for 127.0.0.1 at 2017-12-06 14:28:32 +0530
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"ceate"}
+Completed 200 OK in 0ms (Views: 0.2ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2017-12-06 14:29:22 +0530
+  
+ActionController::RoutingError (uninitialized constant StudentsController):
+  
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-12-06 14:30:45 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/praneethavelamuri/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/praneethavelamuri/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (1.9ms)
+Completed 200 OK in 36ms (Views: 4.4ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2017-12-06 14:33:18 +0530
+  
+ActionController::RoutingError (uninitialized constant StudentsController):
+  
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/students" for 127.0.0.1 at 2017-12-06 14:34:13 +0530
+  
+ActionController::RoutingError (uninitialized constant StudentsController):
+  
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/student" for 127.0.0.1 at 2017-12-06 14:34:40 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/student"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/students" for 127.0.0.1 at 2017-12-06 14:34:46 +0530
+  
+ActionController::RoutingError (uninitialized constant StudentsController):
+  
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/students" for 127.0.0.1 at 2017-12-06 14:35:20 +0530
+  
+ActionController::RoutingError (uninitialized constant StudentsController):
+  
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/students" for 127.0.0.1 at 2017-12-06 14:38:52 +0530
+  
+ActionController::RoutingError (uninitialized constant StudentsController):
+  
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/students" for 127.0.0.1 at 2017-12-06 14:40:18 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/students"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/students" for 127.0.0.1 at 2017-12-06 14:40:42 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/students"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/students" for 127.0.0.1 at 2017-12-06 14:41:47 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/students"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/student" for 127.0.0.1 at 2017-12-06 14:41:59 +0530
+Processing by StudentController#index as HTML
+inside index
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+Completed 200 OK in 20ms (Views: 16.2ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/students" for 127.0.0.1 at 2017-12-06 14:43:03 +0530
+  
+ActionController::RoutingError (No route matches [POST] "/students"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/students" for 127.0.0.1 at 2017-12-06 14:43:19 +0530
+  
+ActionController::RoutingError (No route matches [POST] "/students"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/student" for 127.0.0.1 at 2017-12-06 14:43:25 +0530
+Processing by StudentController#create as */*
+  Parameters: {"name"=>"pranee", "subject"=>"ruby", "grade"=>"A", "student"=>{"name"=>"pranee", "subject"=>"ruby", "grade"=>"A"}}
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.6ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/student_controller.rb:12:in `create'
+Started POST "/student" for 127.0.0.1 at 2017-12-06 14:45:03 +0530
+Processing by StudentController#create as */*
+  Parameters: {"name"=>"pranee", "subject"=>"ruby", "grade"=>"A", "student"=>{"name"=>"pranee", "subject"=>"ruby", "grade"=>"A"}}
+inside create
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.0ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/student_controller.rb:13:in `create'
+Started GET "/student" for 127.0.0.1 at 2017-12-06 14:48:20 +0530
+Processing by StudentController#index as HTML
+inside index
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+Completed 200 OK in 5ms (Views: 2.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/student" for 127.0.0.1 at 2017-12-06 14:48:31 +0530
+Processing by StudentController#create as */*
+  Parameters: {"name"=>"pranee", "subject"=>"ruby", "grade"=>"A", "student"=>{"name"=>"pranee", "subject"=>"ruby", "grade"=>"A"}}
+inside create
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "students" ("name", "subject", "grade", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "pranee"], ["subject", "ruby"], ["grade", "A"], ["created_at", "2017-12-06 09:18:31.052867"], ["updated_at", "2017-12-06 09:18:31.052867"]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 63ms (ActiveRecord: 3.5ms)
+
+
+  
+NoMethodError (undefined method `api_student_path' for #<StudentController:0x00007fa1973f78f8>):
+  
+app/controllers/student_controller.rb:15:in `create'
+Started POST "/student" for 127.0.0.1 at 2017-12-06 14:51:24 +0530
+Processing by StudentController#create as */*
+  Parameters: {"name"=>"pranee", "subject"=>"ruby", "grade"=>"A", "student"=>{"name"=>"pranee", "subject"=>"ruby", "grade"=>"A"}}
+inside create
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "students" ("name", "subject", "grade", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "pranee"], ["subject", "ruby"], ["grade", "A"], ["created_at", "2017-12-06 09:21:24.695997"], ["updated_at", "2017-12-06 09:21:24.695997"]]
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+Completed 201 Created in 11ms (Views: 0.8ms | ActiveRecord: 3.9ms)
+
+
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT  "students".* FROM "students" ORDER BY "students"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "students"[0m
+Started GET "/student" for 127.0.0.1 at 2017-12-06 15:00:07 +0530
+Processing by StudentController#index as HTML
+inside index
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/student/1" for 127.0.0.1 at 2017-12-06 15:00:18 +0530
+Processing by StudentController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started PUT "/" for 127.0.0.1 at 2017-12-06 15:04:21 +0530
+  
+ActionController::RoutingError (No route matches [PUT] "/"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started PUT "/student/1" for 127.0.0.1 at 2017-12-06 15:08:27 +0530
+Processing by StudentController#update as */*
+  Parameters: {"name"=>"varun", "id"=>"1", "student"=>{"name"=>"varun"}}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "students" SET "name" = ?, "updated_at" = ? WHERE "students"."id" = ?[0m  [["name", "varun"], ["updated_at", "2017-12-06 09:38:27.906382"], ["id", 1]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+Completed 204 No Content in 7ms (ActiveRecord: 3.3ms)
+
+
+Started PUT "/student" for 127.0.0.1 at 2017-12-06 15:08:42 +0530
+  
+ActionController::RoutingError (No route matches [PUT] "/student"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started PUT "/student" for 127.0.0.1 at 2017-12-06 15:08:50 +0530
+  
+ActionController::RoutingError (No route matches [PUT] "/student"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started PUT "/student/0" for 127.0.0.1 at 2017-12-06 15:08:55 +0530
+Processing by StudentController#update as */*
+  Parameters: {"name"=>"varun", "id"=>"0", "student"=>{"name"=>"varun"}}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Student with 'id'=0):
+  
+app/controllers/student_controller.rb:26:in `update'
+Started GET "/student/" for 127.0.0.1 at 2017-12-06 15:10:27 +0530
+Processing by StudentController#index as HTML
+inside index
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.2ms)
+
+
+Started PUT "/student/1" for 127.0.0.1 at 2017-12-06 15:11:16 +0530
+Processing by StudentController#update as */*
+  Parameters: {"grade"=>"B", "id"=>"1", "student"=>{"grade"=>"B"}}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "students" SET "grade" = ?, "updated_at" = ? WHERE "students"."id" = ?[0m  [["grade", "B"], ["updated_at", "2017-12-06 09:41:16.627864"], ["id", 1]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+Completed 204 No Content in 7ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/student/" for 127.0.0.1 at 2017-12-06 15:11:29 +0530
+Processing by StudentController#index as HTML
+inside index
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/student/1" for 127.0.0.1 at 2017-12-06 15:15:42 +0530
+Processing by StudentController#destroy as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 1]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+Completed 204 No Content in 5ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/student/" for 127.0.0.1 at 2017-12-06 15:15:48 +0530
+Processing by StudentController#index as HTML
+inside index
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/student/1" for 127.0.0.1 at 2017-12-06 15:19:51 +0530
+Processing by StudentController#update as */*
+  Parameters: {"grade"=>"B", "id"=>"1", "student"=>{"grade"=>"B"}}
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.9ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Student with 'id'=1):
+  
+app/controllers/student_controller.rb:26:in `update'
+Started PUT "/student/1" for 127.0.0.1 at 2017-12-06 15:20:06 +0530
+Processing by StudentController#update as */*
+  Parameters: {"grade"=>"B", "id"=>"1", "student"=>{"grade"=>"B"}}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Student with 'id'=1):
+  
+app/controllers/student_controller.rb:26:in `update'
+Started PUT "/student/2" for 127.0.0.1 at 2017-12-06 15:20:17 +0530
+Processing by StudentController#update as */*
+  Parameters: {"grade"=>"B", "id"=>"2", "student"=>{"grade"=>"B"}}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "students" SET "grade" = ?, "updated_at" = ? WHERE "students"."id" = ?[0m  [["grade", "B"], ["updated_at", "2017-12-06 09:50:17.978211"], ["id", 2]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 15ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/student/" for 127.0.0.1 at 2017-12-06 15:20:36 +0530
+Processing by StudentController#index as HTML
+inside index
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/student" for 127.0.0.1 at 2017-12-07 11:12:45 +0530
+Processing by StudentController#index as HTML
+inside index
+  [1m[36mStudent Load (3.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+Completed 200 OK in 19ms (Views: 12.5ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/student" for 127.0.0.1 at 2017-12-07 11:14:15 +0530
+Processing by StudentController#create as */*
+  Parameters: {"name"=>"pranee", "subject"=>"ruby", "grade"=>"A", "student"=>{"name"=>"pranee", "subject"=>"ruby", "grade"=>"A"}}
+inside create
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "students" ("name", "subject", "grade", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "pranee"], ["subject", "ruby"], ["grade", "A"], ["created_at", "2017-12-07 05:44:15.295477"], ["updated_at", "2017-12-07 05:44:15.295477"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+Completed 201 Created in 11ms (Views: 0.5ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/student" for 127.0.0.1 at 2017-12-07 11:14:28 +0530
+Processing by StudentController#create as */*
+  Parameters: {"name"=>"pranee", "subject"=>"ruby", "grade"=>"A", "student"=>{"name"=>"pranee", "subject"=>"ruby", "grade"=>"A"}}
+inside create
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "students" ("name", "subject", "grade", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "pranee"], ["subject", "ruby"], ["grade", "A"], ["created_at", "2017-12-07 05:44:28.947448"], ["updated_at", "2017-12-07 05:44:28.947448"]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+Completed 201 Created in 7ms (Views: 0.4ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/student" for 127.0.0.1 at 2017-12-07 11:14:40 +0530
+Processing by StudentController#index as HTML
+inside index
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/student/1" for 127.0.0.1 at 2017-12-07 11:14:55 +0530
+Processing by StudentController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Student with 'id'=1):
+  
+app/controllers/student_controller.rb:22:in `show'
+Started GET "/student/2" for 127.0.0.1 at 2017-12-07 11:15:02 +0530
+Processing by StudentController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/student/3" for 127.0.0.1 at 2017-12-07 11:17:04 +0530
+Processing by StudentController#destroy as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 3]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+Completed 204 No Content in 6ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/student/" for 127.0.0.1 at 2017-12-07 11:17:15 +0530
+Processing by StudentController#index as HTML
+inside index
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/student/1" for 127.0.0.1 at 2017-12-07 11:18:36 +0530
+Processing by StudentController#update as */*
+  Parameters: {"grade"=>"B", "id"=>"1", "student"=>{"grade"=>"B"}}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Student with 'id'=1):
+  
+app/controllers/student_controller.rb:26:in `update'
+Started PUT "/student/2" for 127.0.0.1 at 2017-12-07 11:18:44 +0530
+Processing by StudentController#update as */*
+  Parameters: {"grade"=>"B", "id"=>"2", "student"=>{"grade"=>"B"}}
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/student/" for 127.0.0.1 at 2017-12-07 11:18:51 +0530
+Processing by StudentController#index as HTML
+inside index
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateDelayedJobs (20171207120100)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "delayed_jobs"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "delayed_jobs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "priority" integer DEFAULT 0 NOT NULL, "attempts" integer DEFAULT 0 NOT NULL, "handler" text NOT NULL, "last_error" text, "run_at" datetime, "locked_at" datetime, "failed_at" datetime, "locked_by" varchar, "queue" varchar, "created_at" datetime, "updated_at" datetime)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "delayed_jobs_priority" ON "delayed_jobs" ("priority", "run_at")[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171207120100"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='delayed_jobs_priority' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='delayed_jobs_priority' AND type='index'
+[0m
+Started GET "/" for 127.0.0.1 at 2017-12-07 17:55:13 +0530
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/praneethavelamuri/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/praneethavelamuri/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (3.9ms)
+Completed 200 OK in 49ms (Views: 15.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/student" for 127.0.0.1 at 2017-12-07 17:55:21 +0530
+Processing by StudentController#index as HTML
+inside index
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+Completed 200 OK in 16ms (Views: 10.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/student" for 127.0.0.1 at 2017-12-07 17:56:55 +0530
+Processing by StudentController#index as HTML
+inside index
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+Completed 200 OK in 10ms (Views: 8.1ms | ActiveRecord: 0.9ms)
+
+
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (3.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" ORDER BY "delayed_jobs"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/student" for 127.0.0.1 at 2017-12-07 18:07:51 +0530
+Processing by StudentController#index as HTML
+inside index
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+Completed 200 OK in 14ms (Views: 10.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/student" for 127.0.0.1 at 2017-12-07 18:08:11 +0530
+Processing by StudentController#index as HTML
+inside index
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.2ms)
+
+
+2017-12-07T18:10:51+0530: [Worker(host:Praneethas-MacBook-Pro.local pid:23021)] Starting job worker
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (10.9ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-07 12:40:51.863279' AND (locked_at IS NULL OR locked_at < '2017-12-07 08:40:51.863338') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:23021') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.7ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-07 12:40:56.946247' AND (locked_at IS NULL OR locked_at < '2017-12-07 08:40:56.946267') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:23021') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.3ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-07 12:41:01.963462' AND (locked_at IS NULL OR locked_at < '2017-12-07 08:41:01.963477') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:23021') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-07 12:41:06.975543' AND (locked_at IS NULL OR locked_at < '2017-12-07 08:41:06.975559') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:23021') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-07 12:41:11.990465' AND (locked_at IS NULL OR locked_at < '2017-12-07 08:41:11.990482') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:23021') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.3ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-07 12:41:17.004757' AND (locked_at IS NULL OR locked_at < '2017-12-07 08:41:17.004774') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:23021') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-07 12:41:22.018771' AND (locked_at IS NULL OR locked_at < '2017-12-07 08:41:22.018788') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:23021') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.3ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-07 12:41:27.033812' AND (locked_at IS NULL OR locked_at < '2017-12-07 08:41:27.033828') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:23021') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-07 12:41:32.042838' AND (locked_at IS NULL OR locked_at < '2017-12-07 08:41:32.042854') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:23021') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-07 12:41:37.056072' AND (locked_at IS NULL OR locked_at < '2017-12-07 08:41:37.056088') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:23021') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-07 12:41:42.064547' AND (locked_at IS NULL OR locked_at < '2017-12-07 08:41:42.064563') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:23021') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-07 12:41:47.079803' AND (locked_at IS NULL OR locked_at < '2017-12-07 08:41:47.079832') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:23021') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-07 12:41:52.095131' AND (locked_at IS NULL OR locked_at < '2017-12-07 08:41:52.095147') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:23021') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-07 12:41:57.109369' AND (locked_at IS NULL OR locked_at < '2017-12-07 08:41:57.109386') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:23021') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-07 12:42:02.119060' AND (locked_at IS NULL OR locked_at < '2017-12-07 08:42:02.119076') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:23021') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-07 12:42:07.134208' AND (locked_at IS NULL OR locked_at < '2017-12-07 08:42:07.134223') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:23021') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-07 12:42:12.145677' AND (locked_at IS NULL OR locked_at < '2017-12-07 08:42:12.145694') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:23021') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-07 12:42:17.159902' AND (locked_at IS NULL OR locked_at < '2017-12-07 08:42:17.159918') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:23021') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.3ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-07 12:42:22.170451' AND (locked_at IS NULL OR locked_at < '2017-12-07 08:42:22.170468') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:23021') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-07 12:42:27.182550' AND (locked_at IS NULL OR locked_at < '2017-12-07 08:42:27.182566') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:23021') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.8ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-07 12:42:32.214379' AND (locked_at IS NULL OR locked_at < '2017-12-07 08:42:32.214456') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:23021') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-07 12:42:37.241979' AND (locked_at IS NULL OR locked_at < '2017-12-07 08:42:37.241995') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:23021') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-07 12:42:42.254331' AND (locked_at IS NULL OR locked_at < '2017-12-07 08:42:42.254350') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:23021') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-07 12:42:47.263487' AND (locked_at IS NULL OR locked_at < '2017-12-07 08:42:47.263504') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:23021') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-07 12:42:52.273171' AND (locked_at IS NULL OR locked_at < '2017-12-07 08:42:52.273187') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:23021') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-07 12:42:57.282204' AND (locked_at IS NULL OR locked_at < '2017-12-07 08:42:57.282225') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:23021') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-07 12:43:02.294501' AND (locked_at IS NULL OR locked_at < '2017-12-07 08:43:02.294517') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:23021') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 5]]
+2017-12-07T18:13:02+0530: [Worker(host:Praneethas-MacBook-Pro.local pid:23021)] Exiting...
+  [1m[35mSQL (1.1ms)[0m  [1m[33mUPDATE "delayed_jobs" SET "locked_by" = NULL, "locked_at" = NULL WHERE "delayed_jobs"."locked_by" = ?[0m  [["locked_by", "host:Praneethas-MacBook-Pro.local pid:23021"]]
+Started GET "/" for 127.0.0.1 at 2017-12-11 11:25:45 +0530
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/praneethavelamuri/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/praneethavelamuri/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (3.9ms)
+Completed 200 OK in 72ms (Views: 13.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-12-11 11:25:45 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/student" for 127.0.0.1 at 2017-12-11 11:25:54 +0530
+Processing by StudentController#index as HTML
+inside index
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+Completed 200 OK in 18ms (Views: 12.8ms | ActiveRecord: 1.0ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='delayed_jobs_priority' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='delayed_jobs_priority' AND type='index'
+[0m
+[ActiveJob]   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+[ActiveJob]   [1m[35mSQL (1.9ms)[0m  [1m[32mINSERT INTO "delayed_jobs" ("handler", "run_at", "queue", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["handler", "--- !ruby/object:ActiveJob::QueueAdapters::DelayedJobAdapter::JobWrapper\njob_data:\n  job_class: TestJob\n  job_id: 7bc3d1fc-909d-4275-a261-604ef192edd3\n  provider_job_id: \n  queue_name: default\n  priority: \n  arguments:\n  - 1\n  - 2\n  - 3\n  executions: 0\n  locale: en\n"], ["run_at", "2017-12-11 06:27:26.171378"], ["queue", "default"], ["created_at", "2017-12-11 06:27:26.171734"], ["updated_at", "2017-12-11 06:27:26.171734"]]
+[ActiveJob]   [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] Enqueued TestJob (Job ID: 7bc3d1fc-909d-4275-a261-604ef192edd3) to DelayedJob(default) with arguments: 1, 2, 3
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (1.8ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 06:28:01.988180' AND (locked_at IS NULL OR locked_at < '2017-12-11 06:23:01.988268') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:27759') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[35mSQL (2.8ms)[0m  [1m[33mUPDATE "delayed_jobs" SET "locked_at" = '2017-12-11 06:28:02.013951', "locked_by" = 'host:Praneethas-MacBook-Pro.local pid:27759' WHERE "delayed_jobs"."id" IN (SELECT "delayed_jobs"."id" FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 06:28:01.988180' AND (locked_at IS NULL OR locked_at < '2017-12-11 06:23:01.988268') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:27759') AND failed_at IS NULL) AND "delayed_jobs"."id" = ? ORDER BY priority ASC, run_at ASC)[0m  [["id", 1]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE "delayed_jobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[ActiveJob] [TestJob] [7bc3d1fc-909d-4275-a261-604ef192edd3] Performing TestJob (Job ID: 7bc3d1fc-909d-4275-a261-604ef192edd3) from DelayedJob(default) with arguments: 1, 2, 3
+[ActiveJob] [TestJob] [7bc3d1fc-909d-4275-a261-604ef192edd3] TestJob: I'm performing my job with arguments: [1, 2, 3]
+[ActiveJob] [TestJob] [7bc3d1fc-909d-4275-a261-604ef192edd3] Performed TestJob (Job ID: 7bc3d1fc-909d-4275-a261-604ef192edd3) from DelayedJob(default) in 17.33ms
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "delayed_jobs" WHERE "delayed_jobs"."id" = ?[0m  [["id", 1]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 06:28:02.090075' AND (locked_at IS NULL OR locked_at < '2017-12-11 06:23:02.090107') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:27759') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.3ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 06:28:02.091546' AND (locked_at IS NULL OR locked_at < '2017-12-11 06:23:02.091563') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:27759') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "delayed_jobs" SET "locked_by" = NULL, "locked_at" = NULL WHERE "delayed_jobs"."locked_by" = ?[0m  [["locked_by", "host:Praneethas-MacBook-Pro.local pid:27759"]]
+[ActiveJob]   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+[ActiveJob]   [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "delayed_jobs" ("handler", "run_at", "queue", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["handler", "--- !ruby/object:ActiveJob::QueueAdapters::DelayedJobAdapter::JobWrapper\njob_data:\n  job_class: TestJob\n  job_id: d51acf9a-5ab3-4f9a-a06c-f172f8b9f52a\n  provider_job_id: \n  queue_name: default\n  priority: \n  arguments:\n  - 1\n  - 2\n  - 3\n  executions: 0\n  locale: en\n"], ["run_at", "2017-12-11 06:29:21.457536"], ["queue", "default"], ["created_at", "2017-12-11 06:29:21.457968"], ["updated_at", "2017-12-11 06:29:21.457968"]]
+[ActiveJob]   [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] Enqueued TestJob (Job ID: d51acf9a-5ab3-4f9a-a06c-f172f8b9f52a) to DelayedJob(default) with arguments: 1, 2, 3
+[ActiveJob]   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+[ActiveJob]   [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "delayed_jobs" ("handler", "run_at", "queue", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["handler", "--- !ruby/object:ActiveJob::QueueAdapters::DelayedJobAdapter::JobWrapper\njob_data:\n  job_class: TestJob\n  job_id: e25c2864-a789-4af1-b4ec-9a53a39191e7\n  provider_job_id: \n  queue_name: default\n  priority: \n  arguments:\n  - 1\n  - 2\n  - 3\n  executions: 0\n  locale: en\n"], ["run_at", "2017-12-11 07:02:19.652788"], ["queue", "default"], ["created_at", "2017-12-11 07:02:19.654261"], ["updated_at", "2017-12-11 07:02:19.654261"]]
+[ActiveJob]   [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] Enqueued TestJob (Job ID: e25c2864-a789-4af1-b4ec-9a53a39191e7) to DelayedJob(default) with arguments: 1, 2, 3
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (2.4ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 07:05:08.602760' AND (locked_at IS NULL OR locked_at < '2017-12-11 07:00:08.602967') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[35mSQL (1.9ms)[0m  [1m[33mUPDATE "delayed_jobs" SET "locked_at" = '2017-12-11 07:05:08.657619', "locked_by" = 'host:Praneethas-MacBook-Pro.local pid:50957' WHERE "delayed_jobs"."id" IN (SELECT "delayed_jobs"."id" FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 07:05:08.602760' AND (locked_at IS NULL OR locked_at < '2017-12-11 07:00:08.602967') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) AND "delayed_jobs"."id" = ? ORDER BY priority ASC, run_at ASC)[0m  [["id", 2]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE "delayed_jobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[ActiveJob] [TestJob] [d51acf9a-5ab3-4f9a-a06c-f172f8b9f52a] Performing TestJob (Job ID: d51acf9a-5ab3-4f9a-a06c-f172f8b9f52a) from DelayedJob(default) with arguments: 1, 2, 3
+[ActiveJob] [TestJob] [d51acf9a-5ab3-4f9a-a06c-f172f8b9f52a] TestJob: I'm performing my job with arguments: [1, 2, 3]
+[ActiveJob] [TestJob] [d51acf9a-5ab3-4f9a-a06c-f172f8b9f52a] Performed TestJob (Job ID: d51acf9a-5ab3-4f9a-a06c-f172f8b9f52a) from DelayedJob(default) in 14.93ms
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "delayed_jobs" WHERE "delayed_jobs"."id" = ?[0m  [["id", 2]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.3ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 07:05:08.777067' AND (locked_at IS NULL OR locked_at < '2017-12-11 07:00:08.777092') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[35mSQL (1.7ms)[0m  [1m[33mUPDATE "delayed_jobs" SET "locked_at" = '2017-12-11 07:05:08.777510', "locked_by" = 'host:Praneethas-MacBook-Pro.local pid:50957' WHERE "delayed_jobs"."id" IN (SELECT "delayed_jobs"."id" FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 07:05:08.777067' AND (locked_at IS NULL OR locked_at < '2017-12-11 07:00:08.777092') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) AND "delayed_jobs"."id" = ? ORDER BY priority ASC, run_at ASC)[0m  [["id", 3]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.1ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE "delayed_jobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[ActiveJob] [TestJob] [e25c2864-a789-4af1-b4ec-9a53a39191e7] Performing TestJob (Job ID: e25c2864-a789-4af1-b4ec-9a53a39191e7) from DelayedJob(default) with arguments: 1, 2, 3
+[ActiveJob] [TestJob] [e25c2864-a789-4af1-b4ec-9a53a39191e7] TestJob: I'm performing my job with arguments: [1, 2, 3]
+[ActiveJob] [TestJob] [e25c2864-a789-4af1-b4ec-9a53a39191e7] Performed TestJob (Job ID: e25c2864-a789-4af1-b4ec-9a53a39191e7) from DelayedJob(default) in 0.08ms
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "delayed_jobs" WHERE "delayed_jobs"."id" = ?[0m  [["id", 3]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.3ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 07:05:08.785697' AND (locked_at IS NULL OR locked_at < '2017-12-11 07:00:08.785726') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 07:05:08.787164' AND (locked_at IS NULL OR locked_at < '2017-12-11 07:00:08.787177') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 07:06:08.802437' AND (locked_at IS NULL OR locked_at < '2017-12-11 07:01:08.802460') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 07:07:08.815389' AND (locked_at IS NULL OR locked_at < '2017-12-11 07:02:08.815458') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 07:08:08.833683' AND (locked_at IS NULL OR locked_at < '2017-12-11 07:03:08.833699') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 07:09:08.848488' AND (locked_at IS NULL OR locked_at < '2017-12-11 07:04:08.848507') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 07:10:08.862409' AND (locked_at IS NULL OR locked_at < '2017-12-11 07:05:08.862426') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 07:11:08.876468' AND (locked_at IS NULL OR locked_at < '2017-12-11 07:06:08.876486') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 07:12:08.892709' AND (locked_at IS NULL OR locked_at < '2017-12-11 07:07:08.892725') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 07:13:08.909417' AND (locked_at IS NULL OR locked_at < '2017-12-11 07:08:08.909434') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 07:14:08.921776' AND (locked_at IS NULL OR locked_at < '2017-12-11 07:09:08.921791') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.3ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 07:15:08.942476' AND (locked_at IS NULL OR locked_at < '2017-12-11 07:10:08.942492') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 07:16:08.958753' AND (locked_at IS NULL OR locked_at < '2017-12-11 07:11:08.958769') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 07:17:08.974997' AND (locked_at IS NULL OR locked_at < '2017-12-11 07:12:08.975013') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 07:18:08.987620' AND (locked_at IS NULL OR locked_at < '2017-12-11 07:13:08.987636') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 07:19:09.007699' AND (locked_at IS NULL OR locked_at < '2017-12-11 07:14:09.007715') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 07:20:09.025689' AND (locked_at IS NULL OR locked_at < '2017-12-11 07:15:09.025705') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 07:21:09.038547' AND (locked_at IS NULL OR locked_at < '2017-12-11 07:16:09.038563') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 07:22:09.056001' AND (locked_at IS NULL OR locked_at < '2017-12-11 07:17:09.056017') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 07:23:09.074182' AND (locked_at IS NULL OR locked_at < '2017-12-11 07:18:09.074200') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 07:24:09.089965' AND (locked_at IS NULL OR locked_at < '2017-12-11 07:19:09.089981') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 07:25:09.105456' AND (locked_at IS NULL OR locked_at < '2017-12-11 07:20:09.105472') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 07:26:09.186244' AND (locked_at IS NULL OR locked_at < '2017-12-11 07:21:09.186259') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 07:27:09.202029' AND (locked_at IS NULL OR locked_at < '2017-12-11 07:22:09.202045') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 07:28:09.215254' AND (locked_at IS NULL OR locked_at < '2017-12-11 07:23:09.215271') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 07:29:09.230127' AND (locked_at IS NULL OR locked_at < '2017-12-11 07:24:09.230182') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 07:30:09.240750' AND (locked_at IS NULL OR locked_at < '2017-12-11 07:25:09.240768') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 07:31:09.256542' AND (locked_at IS NULL OR locked_at < '2017-12-11 07:26:09.256558') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 07:32:09.268991' AND (locked_at IS NULL OR locked_at < '2017-12-11 07:27:09.269006') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 07:33:09.287765' AND (locked_at IS NULL OR locked_at < '2017-12-11 07:28:09.287783') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 07:34:09.307890' AND (locked_at IS NULL OR locked_at < '2017-12-11 07:29:09.307906') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 07:35:09.320118' AND (locked_at IS NULL OR locked_at < '2017-12-11 07:30:09.320133') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 07:36:09.336397' AND (locked_at IS NULL OR locked_at < '2017-12-11 07:31:09.336413') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.3ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 07:37:09.353486' AND (locked_at IS NULL OR locked_at < '2017-12-11 07:32:09.353502') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 07:38:09.377000' AND (locked_at IS NULL OR locked_at < '2017-12-11 07:33:09.377015') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 07:39:09.392692' AND (locked_at IS NULL OR locked_at < '2017-12-11 07:34:09.392708') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.3ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 07:40:09.408719' AND (locked_at IS NULL OR locked_at < '2017-12-11 07:35:09.408737') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 07:41:09.427943' AND (locked_at IS NULL OR locked_at < '2017-12-11 07:36:09.427966') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 07:42:09.437396' AND (locked_at IS NULL OR locked_at < '2017-12-11 07:37:09.437412') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 07:43:09.452791' AND (locked_at IS NULL OR locked_at < '2017-12-11 07:38:09.452807') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 07:44:09.473094' AND (locked_at IS NULL OR locked_at < '2017-12-11 07:39:09.473115') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 07:45:09.488403' AND (locked_at IS NULL OR locked_at < '2017-12-11 07:40:09.488420') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 07:46:09.503568' AND (locked_at IS NULL OR locked_at < '2017-12-11 07:41:09.503585') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 07:47:09.518459' AND (locked_at IS NULL OR locked_at < '2017-12-11 07:42:09.518475') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 07:48:09.536654' AND (locked_at IS NULL OR locked_at < '2017-12-11 07:43:09.536671') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 07:49:09.549257' AND (locked_at IS NULL OR locked_at < '2017-12-11 07:44:09.549279') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 07:50:09.567577' AND (locked_at IS NULL OR locked_at < '2017-12-11 07:45:09.567593') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.5ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 08:11:35.007924' AND (locked_at IS NULL OR locked_at < '2017-12-11 08:06:35.007946') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 08:12:35.022443' AND (locked_at IS NULL OR locked_at < '2017-12-11 08:07:35.022460') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.4ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 08:13:35.042759' AND (locked_at IS NULL OR locked_at < '2017-12-11 08:08:35.042775') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 08:14:35.066318' AND (locked_at IS NULL OR locked_at < '2017-12-11 08:09:35.066334') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 08:15:35.084475' AND (locked_at IS NULL OR locked_at < '2017-12-11 08:10:35.084515') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.4ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 08:16:35.111440' AND (locked_at IS NULL OR locked_at < '2017-12-11 08:11:35.111464') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 08:17:35.131840' AND (locked_at IS NULL OR locked_at < '2017-12-11 08:12:35.131862') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 08:18:35.150445' AND (locked_at IS NULL OR locked_at < '2017-12-11 08:13:35.150461') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 08:19:35.170269' AND (locked_at IS NULL OR locked_at < '2017-12-11 08:14:35.170285') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 08:20:35.186738' AND (locked_at IS NULL OR locked_at < '2017-12-11 08:15:35.186754') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.3ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 08:21:35.203381' AND (locked_at IS NULL OR locked_at < '2017-12-11 08:16:35.203398') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 08:22:35.217230' AND (locked_at IS NULL OR locked_at < '2017-12-11 08:17:35.217247') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 08:23:35.234149' AND (locked_at IS NULL OR locked_at < '2017-12-11 08:18:35.234166') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 08:24:35.257022' AND (locked_at IS NULL OR locked_at < '2017-12-11 08:19:35.257039') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 08:25:35.272554' AND (locked_at IS NULL OR locked_at < '2017-12-11 08:20:35.272570') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.2ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 08:26:35.340016' AND (locked_at IS NULL OR locked_at < '2017-12-11 08:21:35.340032') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.3ms)[0m  [1m[34mSELECT  "delayed_jobs".* FROM "delayed_jobs" WHERE ((run_at <= '2017-12-11 08:27:35.356066' AND (locked_at IS NULL OR locked_at < '2017-12-11 08:22:35.356088') OR locked_by = 'host:Praneethas-MacBook-Pro.local pid:50957') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT ?[0m  [["LIMIT", 10]]
